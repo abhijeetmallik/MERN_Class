@@ -28,9 +28,9 @@ const WorkTimer = () => {
   };
 
   return (
-    <div style={{ textAlign: "center"}}>
+    <div style={{ textAlign: "start"}}>
       <h1 className='text-[40px]' >{formatTime(time)}</h1>
-      <h2>{isWorkTime ? "Work Time" : "Break Time"}</h2>
+      <h2 className='py-[10px]' >{isWorkTime ? "Work Time" : "Break Time"}</h2>
 
       <button onClick={() => setIsRunning(true)} disabled={isRunning} className='border-[1px] border-[black] rounded-sm px-1 bg-gray-200'>
         Start
